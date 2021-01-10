@@ -1,0 +1,58 @@
+@import "quasar.variables";
+
+.navbar {
+  color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+
+  &__logo {
+    width: 82px;
+    height: 40px;
+
+    @media (min-width: 992px) {
+      width: 138px;
+      height: 66px;
+    }
+  }
+
+  &__icones {
+    display: flex;
+    justify-content: space-evenly;
+
+    &--icon {
+      padding: 0 .5rem;
+      cursor: pointer;
+
+      &:hover {
+        transition: all .3s ease-in-out;
+        transform: scale(1.2);
+      }
+
+      @media (min-width: 1023px) {
+        margin: auto;
+      }
+    }
+  }
+
+  button {
+    font-size: 1rem;
+    color: $primary;
+  }
+}
+
+.q-item {
+  color: $primary;
+
+  &:hover {
+    text-decoration: none;
+    border-bottom: solid $secondary;
+  }
+}
+
+.q-list {
+  @media (min-width: 1023px) {
+    display: flex;
+  }
+}

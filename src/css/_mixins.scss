@@ -1,0 +1,29 @@
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin botao-um {
+  background-color: $secondary;
+  cursor: pointer;
+}
+
+@mixin botao-dois ($bg_color, $color) {
+  background-color: $bg_color;
+  color: $color;
+  border: solid $color 1px;
+  height: 46px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.05);
+  }
+}
+
+@mixin input-padrao {
+  height: 46px;
+  margin-right: 12px;
+  padding: 1rem .3rem;
+}
