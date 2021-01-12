@@ -6,6 +6,15 @@ h2 {
 @mixin botao-um {
   background-color: $secondary;
   cursor: pointer;
+  border: none;
+  color: white;
+  height: 46px;
+  width: 100%;
+  margin: 1rem 0;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 @mixin botao-dois ($bg_color, $color) {
