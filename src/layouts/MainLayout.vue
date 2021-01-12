@@ -76,7 +76,8 @@
           </q-list>
         </q-drawer>
     <q-page-container class="body">
-      <Newsletter/>
+
+      <Blog/>
     </q-page-container>
     <q-footer elevated class="footer">
         <div class="text-center">
@@ -180,7 +181,8 @@
 </template>
 <script>
 import MenuLinks from 'components/MenuLinks.vue'
-import Newsletter from 'components/Newsletter.vue'
+
+import Blog from 'components/Blog.vue'
 const linksMenu = [
   {
     title: 'INÍCIO',
@@ -210,7 +212,7 @@ const linksMenu = [
 
 export default {
   name: 'MainLayout',
-  components: { MenuLinks, Newsletter },
+  components: { MenuLinks, Blog },
   data () {
     return {
       leftDrawerOpen: false,
