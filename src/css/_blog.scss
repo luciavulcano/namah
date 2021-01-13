@@ -57,10 +57,7 @@
 
   &__button {
     @include botao-um;
-
-    @media(min-width:1440px) {
-      width: 30%;
-    }
+    max-width: 290px;
   }
 
   &__newsletter {

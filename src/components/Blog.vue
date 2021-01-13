@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <div class="blog col items-center">
     <div class="separador">
       <div class="linha"></div>
       <h2 class="blog__titulo">{{titulo}}</h2>
@@ -55,7 +55,7 @@
       </div>
       <Newsletter class="blog__newsletter--mob"/>
     </div>
-    <button class="blog__button">
+    <button class="blog__button self-center">
       Veja todos os posts
       <span>&#129042;</span>
     </button>
