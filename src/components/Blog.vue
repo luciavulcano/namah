@@ -5,7 +5,7 @@
       <h2 class="blog__titulo">{{titulo}}</h2>
       <div class="linha"></div>
     </div>
-    <div class="row justify-between">
+    <div class="blog__section__cards--lg">
       <q-card class="my-card--lg q-mb-md oi">
           <q-img src="~/src/assets/blog-card1.png">
             <div class="absolute-bottom">
@@ -30,7 +30,7 @@
       </q-card>
     </div>
     <div class="">
-      <div class="q-mb-md blog__section__cards">
+      <div class="q-mb-md blog__section__cards--sm">
           <q-card class="my-card--sm">
               <img src="~/src/assets/blog-card3.png">
                 <q-card-section>

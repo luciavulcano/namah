@@ -83,10 +83,20 @@
 
   &__section {
     &__cards {
-      display: flex;
-      justify-content: space-between;
 
-      @media (min-width: 1440px) {}
+      &--sm {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &--lg {
+        @media (min-width: 1023px) {
+          display: flex;
+          justify-content: space-between;
+
+        }
+      }
+
     }
   }
 }
