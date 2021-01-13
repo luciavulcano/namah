@@ -2,26 +2,59 @@
   border: solid 3px $third;
   text-align: center;
 
+  &__conteudo {
+    display: flex;
+    flex-direction: column;
+  }
 
   h3 {
     margin: 0;
     font-size: 30px;
+    @include fonte-cursiva;
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+    }
   }
 
   input {
     @include input-padrao;
+    margin-right: 12px;
+
+    @media (min-width: 1440px) {
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   button {
     @include botao-dois(white, black);
+
+    @media (min-width: 1023px) {
+      margin-top: 1rem;
+      width: 50%;
+      max-width: 200px;
+    }
   }
 
   &__texto {
     font-size: 18px;
 
+    @media (min-width: 1440px) {
+      margin-bottom: 2rem;
+    }
+
     &--size {
       margin: 10px 0;
       font-size: 13px;
+    }
+  }
+
+  &__form {
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

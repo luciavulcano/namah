@@ -5,8 +5,8 @@
       <h2 class="blog__titulo">{{titulo}}</h2>
       <div class="linha"></div>
     </div>
-    <div class="">
-      <q-card class="my-card q-mb-md">
+    <div class="row justify-between">
+      <q-card class="my-card--lg q-mb-md oi">
           <q-img src="~/src/assets/blog-card1.png">
             <div class="absolute-bottom">
               <h4 class="blog__card__titulo">{{lorem}}</h4>
@@ -17,7 +17,7 @@
             </div>
           </q-img>
       </q-card>
-      <q-card class="my-card q-mb-md">
+      <q-card class="my-card--lg q-mb-md oi">
           <q-img src="~/src/assets/blog-card2.png">
             <div class="absolute-bottom">
               <h4 class="blog__card__titulo">{{lorem}}</h4>
@@ -29,9 +29,9 @@
           </q-img>
       </q-card>
     </div>
-    <div>
-      <div class="row q-mb-md justify-between">
-          <q-card class="my-card--size">
+    <div class="">
+      <div class="q-mb-md blog__section__cards">
+          <q-card class="my-card--sm">
               <img src="~/src/assets/blog-card3.png">
                 <q-card-section>
                   <h4 class="blog__card__titulo--size">{{lorem}}</h4>
@@ -41,7 +41,7 @@
                   {{ loremTexto }}
               </q-card-section>
           </q-card>
-          <q-card class="my-card--size">
+          <q-card class="my-card--sm">
             <img src="~/src/assets/blog-card4.png">
               <q-card-section>
                 <h4 class="blog__card__titulo--size">{{lorem}}</h4>
@@ -51,8 +51,9 @@
                 {{ loremTexto }}
             </q-card-section>
           </q-card>
+          <Newsletter class="blog__newsletter--desk"/>
       </div>
-      <Newsletter/>
+      <Newsletter class="blog__newsletter--mob"/>
     </div>
     <button class="blog__button">
       Veja todos os posts

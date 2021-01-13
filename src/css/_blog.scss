@@ -2,9 +2,9 @@
   width: 100%;
 
   &__titulo {
-    margin: 0 1rem;
+    margin: 1rem;
     font-size: 36px;
-    font-family: 'Lobster', cursive;
+    @include fonte-cursiva;
 
     @media (min-width:1023px) {
       font-size: 48px;
@@ -15,9 +15,9 @@
     &__titulo {
       font-size: 22px;
       margin: 0;
-      font-family: 'Lobster', cursive;
       line-height: 1.5;
       padding-bottom: .5rem;
+      @include fonte-cursiva;
 
       @media (min-width: width 1023px) {
         font-size: 36px;
@@ -58,14 +58,51 @@
   &__button {
     @include botao-um;
 
-    @media(min-width:1023px) {
+    @media(min-width:1440px) {
       width: 30%;
+    }
+  }
+
+  &__newsletter {
+    &--mob {
+      @media (min-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &--desk {
+      display: none;
+
+      @media (min-width: 1440px) {
+        display: block;
+        width: 30%;
+
+      }
+    }
+  }
+
+  &__section {
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+
+      @media (min-width: 1440px) {}
     }
   }
 }
 
 .my-card {
-  &--size {
+  &--sm {
     width: 48%;
+
+    @media (min-width: 1440px) {
+      width: 30%;
+    }
+  }
+
+  &--lg {
+    @media (min-width: 1023px) {
+      width: 49%;
+    }
   }
 }
