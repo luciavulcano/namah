@@ -76,8 +76,8 @@
           </q-list>
         </q-drawer>
     <q-page-container class="body">
-
       <Blog/>
+      <Carrossel/>
     </q-page-container>
     <q-footer elevated class="footer">
         <div class="text-center">
@@ -181,7 +181,7 @@
 </template>
 <script>
 import MenuLinks from 'components/MenuLinks.vue'
-
+import Carrossel from 'components/Carrossel.vue'
 import Blog from 'components/Blog.vue'
 const linksMenu = [
   {
@@ -209,10 +209,9 @@ const linksMenu = [
     link: ''
   }
 ]
-
 export default {
   name: 'MainLayout',
-  components: { MenuLinks, Blog },
+  components: { MenuLinks, Blog, Carrossel },
   data () {
     return {
       leftDrawerOpen: false,

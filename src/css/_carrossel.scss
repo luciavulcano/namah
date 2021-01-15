@@ -1,0 +1,52 @@
+.carrossel {
+  &__card {
+    width: 40%;
+    margin: 10px 0;
+
+    @media (min-width: 1023px) {
+      width: 20%;
+    }
+
+    &__imagem {}
+
+    &__textos {
+      padding: 0;
+      text-align: center;
+
+      &--titulo {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+
+        @media (min-width:1023px) {
+          font-size: 18px;
+        }
+      }
+
+      &--descricao {
+        font-size: 12px;
+
+        @media (min-width:1023px) {
+          font-size: 14px;
+        }
+      }
+
+      &--preco {
+        font-size: 14px;
+
+        @media (min-width:1023px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+}
+
+div.q-carousel__slide {
+  padding: 0 !important;
+}
+
+.q-carousel__navigation-inner {
+  margin-top: 30px;
+}
